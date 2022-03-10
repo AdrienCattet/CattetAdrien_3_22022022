@@ -1,0 +1,17 @@
+.hdr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    &__div_logo {
+        height: 80%;
+        width: 60%;
+    }
+    &nav_restaurant {
+        height: 80%;
+        width: 20%;
+    }
+    img {
+        object-fit: contain;
+    }
+}

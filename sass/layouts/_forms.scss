@@ -1,0 +1,28 @@
+.form_recherche {
+    @include flex_column;
+    align-items: center;
+    background-color: $color_grey;
+    border-top: 2px solid $color_greyest;
+    height: 250px;
+    &__div_recherche{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color_greyer;
+        padding: 5px;
+        width: 97%;
+        height: 30px;
+        input {
+            background-color: $color_greyer;
+            border: none;
+            padding-left: 15px;
+
+            &:active {
+                border: $color_greyest;
+            }
+        }
+    }
+    &__div_description{
+        text-align: center;
+    }
+}
