@@ -1,0 +1,18 @@
+.div_coeur {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.coeur--hover{
+    display: none;
+    color: $primary_color;
+}
+
+.div_coeur:hover {
+    .coeur {
+        display: none;
+    }
+    .coeur--hover {
+        display: unset;
+    }
+}

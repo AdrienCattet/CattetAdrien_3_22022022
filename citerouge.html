@@ -36,115 +36,176 @@
     <section class="sct_banniere">
 
         <div class="sct_banniere__div_img">
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Ménilmontant">
+            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Ménilmontant">
         </div>
 
     </section>
 
 
-    <section class="menu">
+    <section class="sct_menu">
 
-        <div class="menu__titre">
-            <h1 class="titre">À la française</h1>
-            <p class="coeur"><i class="far fa-heart"></i></p>
-            <p class="coeur"><i class="fas fa-heart"></i></p>
+        <div class="sct_menu__div_titre">
+
+            <div>
+                <h1 class="titre">À la française</h1>
+            </div>
+
+            <div class="div_coeur">
+                <p class="coeur"><i class="far fa-heart"></i></p>
+                <p class="coeur--hover"><i class="fas fa-heart coeur--hover"></i></p>
+            </div>
+
         </div>
 
-        <div class="menu__formulaire">
+        <div class="sct_menu__div_menu">
 
-            <form method="post" action="traitement.php">
+            <div class="sct_menu__div_menu__div_titre">
+                <h2 class="titre_menu">ENTRÉES</h2>
+            </div>
 
-                <fieldset class="menu__formulaire__fieldset">
-                    
-                    <legend>Entrées</legend>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Tarte de poulpe acidulé</h3>
+                    <p>Aux zests d'orange</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>25€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                    <div class="entree">
-                        <label for="entree1">Tarte de poulpe acidulé</label>
-                        <p>Aux zests d'orange</p>
-                        <p>25€</p>
-                        <input type="radio" name="menu_entree" id="entree1">
-                    </div>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Velouté de légumes d'antan</h3>
+                    <p>Carrotte, panais, topinambour</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>35€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                    <div class="entree">
-                        <label for="entree2">Velouté de légumes d'antan</label>
-                        <p>Carrotte, panais, topinambour</p>
-                        <p>35€</p>
-                        <input type="radio" name="menu_entree" id="entree2">
-                    </div>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Soupe à l'oignon</h3>
+                    <p>Revisitée</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>20€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                    <div class="entree">
-                        <label for="entree3">Soupe à l'oignon</label>
-                        <p>Revisitée</p>
-                        <p>20€</p>
-                        <input type="radio" name="menu_entree" id="entree3">
-                    </div>
+        </div>
 
-                </fieldset>
+        <div class="sct_menu__div_menu">
 
-                <fieldset class="menu__formulaire__fieldset">
+            <div class="sct_menu__div_menu__div_titre">
+                <h2 class="titre_menu">PLATS</h2>
+            </div>
 
-                    <legend>Plats</legend>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <p>Accompagnées d'une purée de panais</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>40€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                    <div class="plat">
-                        <label for="plat1">Coquilles Saint-Jacques</label>
-                        <p>Accompagnées d'une purée de panais</p>
-                        <p>40€</p>
-                        <input type="radio" name="menu_plat" id="plat1">
-                    </div>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Magret de canard</h3>
+                    <p>Et parmentier de pommes de terre</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>35€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                    <div class="plat">
-                        <label for="plat2">Magret de canard</label>
-                        <p>Et parmentier de pommes de terre</p>
-                        <p>35€</p>
-                        <input type="radio" name="menu_plat" id="plat2">
-                    </div>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>44€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                   <div class="plat">
-                        <label for="plat3">Pigeonneau d'Ille-et-Vilaine</label>
-                        <p>Sur son lit de gnocchis aux légumes</p>
-                        <p>44€</p>
-                        <input type="radio" name="menu_plat" id="plat3">
-                    </div>
+        </div>
 
-                </fieldset>
+        <div class="sct_menu__div_menu">
 
-                <fieldset class="menu__formulaire__fieldset">
+            <div class="sct_menu__div_menu__div_titre">
+                <h2 class="titre_menu">DESSERTS</h2>
+            </div>
 
-                    <legend>Desserts</legend>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Pétales de violettes glacés</h3>
+                    <p>Et purée de noisettes</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>18€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                    <div class="dessert">
-                        <label for="dessert1">Pétales de violettes glacés</label>
-                        <p>Et purée de noisettes</p>
-                        <p>18€</p>
-                        <input type="radio" name="menu_dessert" id="dessert1">
-                    </div>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Fondant au chocolat</h3>
+                    <p>Revisité</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>22€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                    <div class="dessert">
-                        <label for="dessert2">Fondant au chocolat</label>
-                        <p>Revisté</p>
-                        <p>22€</p>
-                        <input type="radio" name="menu_dessert" id="dessert2">
-                    </div>
- 
-                    <div class="dessert">
-                        <label for="dessert3">Millefeuille croustillant</label>
-                        <p>Myrtilles et pâte d'amende</p>
-                        <p>23€</p>
-                        <input type="radio" name="menu_dessert" id="dessert3">
-                    </div>
+            <div class="sct_menu__div_menu__div_plat">
+                <div class="sct_menu__div_menu__div_plat__div_description">
+                    <h3>Millefeuille croustillant</h3>
+                    <p>Myrtilles et pâte d'amende</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat__div_prix">
+                    <p>23€</p>
+                </div>
+                <div class="sct_menu__div_menu__div_plat--div_check">
+                    <p><i class="fas fa-check-circle"></i></p>
+                </div>
+            </div>
 
-                </fieldset>
+        </div>
 
-                <button type="button">Commander</button>
-
-            </form>
-
+        <div class="sct_menu__div_bouton">
+            <button type="button">Commander</button>
         </div>
 
     </section>
 
 
-    <footer>
+    <footer class="footer_menu">
 
         <div>
             <h3 class="titre">ohmyfood</h3>

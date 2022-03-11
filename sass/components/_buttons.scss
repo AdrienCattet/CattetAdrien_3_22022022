@@ -1,8 +1,9 @@
 button {
     color: white;
     background: linear-gradient(to top, $primary_color, $secondary_color);
-    @include box-shadow;
     border: none;
-    padding: 15px;
     border-radius: 25px;
+    @include box-shadow;
+    padding: 15px;
+    min-width: 180px;
 }

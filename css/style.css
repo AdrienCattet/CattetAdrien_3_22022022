@@ -5,19 +5,24 @@
   text-decoration: none;
 }
 
-.titre {
-  font-family: "Shrikhand", cursive;
-}
-
 h1 {
   font-size: 1.5em;
 }
 
 h2 {
   font-size: 1.25em;
+  margin: 0px;
 }
 
-.coeur {
+.titre {
+  font-family: "Shrikhand", cursive;
+}
+
+.titre_menu {
+  font-weight: 100;
+}
+
+.fa-heart {
   font-size: 1.5em;
 }
 
@@ -43,10 +48,28 @@ i {
 button {
   color: white;
   background: linear-gradient(to top, #9256dc, #FF79DA);
-  box-shadow: 0px 1px 3px #c8c8c8;
   border: none;
-  padding: 15px;
   border-radius: 25px;
+  box-shadow: 0px 1px 3px #c8c8c8;
+  padding: 15px;
+  min-width: 180px;
+}
+
+.div_coeur {
+  text-align: center;
+  margin-right: 10px;
+}
+
+.coeur--hover {
+  display: none;
+  color: #9256dc;
+}
+
+.div_coeur:hover .coeur {
+  display: none;
+}
+.div_coeur:hover .coeur--hover {
+  display: unset;
 }
 
 .hdr {
@@ -80,10 +103,12 @@ footer h3, footer i, footer a {
 .form_recherche {
   display: flex;
   flex-flow: column;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #f2f2f2;
   border-top: 2px solid #c8c8c8;
   height: 250px;
+  padding-bottom: 30px;
 }
 .form_recherche__div_recherche {
   display: flex;
@@ -103,6 +128,89 @@ footer h3, footer i, footer a {
   border: #c8c8c8;
 }
 .form_recherche__div_description {
+  text-align: center;
+}
+
+.sct_banniere__div_img {
+  height: 350px;
+}
+
+.sct_menu, .footer_menu {
+  position: relative;
+  bottom: 50px;
+}
+
+.sct_menu {
+  background-color: #f2f2f2;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 12px;
+}
+.sct_menu div {
+  margin-bottom: 20px;
+}
+.sct_menu__div_titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sct_menu__div_menu {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+.sct_menu__div_menu__div_titre {
+  overflow-x: visible;
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+}
+.sct_menu__div_menu__div_plat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 3px #c8c8c8;
+  padding-left: 12px;
+  height: 120px;
+}
+.sct_menu__div_menu__div_plat div {
+  margin: 0px;
+}
+.sct_menu__div_menu__div_plat__div_description {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 100%;
+}
+.sct_menu__div_menu__div_plat__div_description h3, .sct_menu__div_menu__div_plat__div_description p {
+  margin: 0px;
+}
+.sct_menu__div_menu__div_plat__div_prix {
+  text-align: right;
+  align-self: flex-end;
+  padding-right: 20px;
+  width: 20%;
+}
+.sct_menu__div_menu__div_plat--div_check {
+  display: none;
+  background-color: #99E2D0;
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 20%;
+}
+.sct_menu__div_menu__div_plat--div_check i {
+  color: white;
+  font-size: 1.5em;
+}
+.sct_menu__div_menu__div_plat:hover .sct_menu__div_menu__div_plat--div_check {
+  display: unset;
+}
+.sct_menu__div_bouton {
   text-align: center;
 }
 
@@ -137,7 +245,7 @@ footer h3, footer i, footer a {
   color: #c8c8c8;
 }
 .sct_presentation__div_fonctionnement:hover {
-  background-color: #9256dc 0.3;
+  background-color: #9256dc xx;
 }
 .sct_presentation__div_fonctionnement:hover i {
   color: #9256dc;
@@ -151,7 +259,14 @@ footer h3, footer i, footer a {
   padding: 12px;
   padding-bottom: 30px;
 }
+.sct_restaurants__div_titre {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .sct_restaurants__art_restaurant {
+  box-shadow: 0px 1px 3px #c8c8c8;
+  border-radius: 15px;
+  margin-bottom: 30px;
   width: 100%;
 }
 .sct_restaurants__art_restaurant figure {
@@ -172,18 +287,18 @@ footer h3, footer i, footer a {
   border-bottom-right-radius: 15px;
   padding-left: 12px;
   padding-right: 12px;
+  height: 90px;
 }
-
-.coeur--active {
-  color: #9256dc;
-  display: none;
+.sct_restaurants__art_restaurant--div_nouveau {
+  position: absolute;
+  background-color: #99E2D0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
-.div_coeur:hover .coeur {
-  display: none;
-}
-.div_coeur:hover .coeur--active {
-  display: unset;
+.sct_restaurants__art_restaurant--div_nouveau p {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

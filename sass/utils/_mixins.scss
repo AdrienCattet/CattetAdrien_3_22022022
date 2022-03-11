@@ -1,6 +1,18 @@
 @mixin flex_column {
     display: flex;
-    flex-flow: column;    
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+@mixin flex_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin position_menu {
+    position: relative;
+    bottom: 50px;    
 }
 
 @mixin box-shadow {

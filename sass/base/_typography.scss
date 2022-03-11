@@ -5,18 +5,23 @@
     text-decoration: none;
 }
 
-.titre{
-    font-family: $title_font-family;
-}
-
 h1 {
     font-size: 1.5em;
 }
 
 h2 {
     font-size: 1.25em;
+    margin: 0px;
 }
 
-.coeur {
+.titre{
+    font-family: $title_font-family;
+}
+
+.titre_menu{
+    font-weight: 100;
+}
+
+.fa-heart {
     font-size: 1.5em;
 }

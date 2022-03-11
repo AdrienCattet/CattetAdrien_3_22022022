@@ -1,6 +1,5 @@
 .sct_presentation{
     @include flex_column;
-    justify-content: space-evenly;
     padding: 12px;
     height: 300px;
     &__div_fonctionnement {
@@ -26,7 +25,7 @@
             color: $color_greyest;
         }
         &:hover {
-            background-color: $primary_color 0.3;
+            background-color: $primary_color xx;
             i {
                 color: $primary_color;
             }
@@ -34,13 +33,19 @@
     }
 }
 
-.sct_restaurants{
+.sct_restaurants {
     @include flex_column;
-    justify-content: space-evenly;
     background-color: $color_grey;
     padding: 12px;
     padding-bottom: 30px;
+    &__div_titre {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
     &__art_restaurant{
+        @include box-shadow;
+        border-radius: 15px;
+        margin-bottom: 30px;
         width: 100%;
         figure {
             margin: 0;
@@ -52,27 +57,24 @@
             }
         }
         &__div_description {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex_row;
             background-color: $color_white;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
             padding-left: 12px;
             padding-right: 12px;
+            height: 90px;
         }
-    }
-}
-
-.coeur--active{
-    color: $primary_color;
-    display: none;
-}
-.div_coeur:hover {
-    .coeur {
-        display: none;
-    }
-    .coeur--active {
-        display: unset;
+        &--div_nouveau {
+            position: absolute;
+            background-color: $tertiary_color;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            p {
+                margin: 0px;
+            }
+        }
     }
 }
