@@ -2,8 +2,12 @@ $text_font-family: 'Roboto', sans-serif;
 $title_font-family: 'Shrikhand', cursive;
 
 $primary_color:#9256dc;
+$primary_color_lighten: lighten($primary_color, 5);
+$primary_color_lighten_2: lighten($primary_color, 35);
 $secondary_color: #FF79DA;
+$secondary_color_lighten: lighten($secondary_color, 5);
 $tertiary_color: #99E2D0;
+$tertiary_color_darker: darken($tertiary_color, 45);
 
 $color_white: rgb(255, 255, 255);
 $color_grey: rgb(242, 242, 242);

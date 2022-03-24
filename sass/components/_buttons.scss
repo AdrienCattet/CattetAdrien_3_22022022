@@ -1,4 +1,5 @@
 button {
+    cursor: pointer;
     color: white;
     background: linear-gradient(to top, $primary_color, $secondary_color);
     border: none;
@@ -6,4 +7,9 @@ button {
     @include box-shadow;
     padding: 15px;
     min-width: 180px;
+    transition: all 0.5s;
+    &:hover {
+        background: linear-gradient(to top, $primary_color_lighten, $secondary_color_lighten);
+        @include box-shadow_hover;
+    }
 }
