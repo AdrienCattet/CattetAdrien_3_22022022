@@ -11,7 +11,7 @@
     z-index: 1000;
     width: 100%;
     height: 100%;
-    animation: loader 600ms 2000ms ease-out both;
+    animation: loader 600ms 1500ms ease-out both;
     &__div_logo {
         width: 200px;
         height: 100px;
@@ -33,14 +33,14 @@
     }
     .div_bar--1 {
         background-color: $primary_color;
-        animation-delay: 0ms;
+        animation-delay: 300ms;
     }
     .div_bar--2 {
         background-color: $secondary_color;
-        animation-delay: 700ms;
+        animation-delay: 600ms;
     }
     .div_bar--3 {
         background-color: $tertiary_color;
-        animation-delay: 1400ms;
+        animation-delay: 900ms;
     }
 }
