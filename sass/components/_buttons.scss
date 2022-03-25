@@ -7,7 +7,7 @@ button {
     @include box-shadow;
     padding: 15px;
     min-width: 180px;
-    transition: all 0.5s;
+    transition: all 600ms;
     &:hover {
         background: linear-gradient(to top, $primary_color_lighten, $secondary_color_lighten);
         @include box-shadow_hover;

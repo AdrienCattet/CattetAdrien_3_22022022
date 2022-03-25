@@ -1,36 +1,41 @@
-.sct_banniere__div_img {
-    height: 350px;
-}
-
-.sct_menu, .footer_menu {
-    @include position_menu;
-}
-
 .sct_menu {
     background-color: $color_grey;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding: 12px;
-    div {
-        margin-bottom: 20px;
+    &__div_img {
+        width: 100%;
+        height: 350px;
     }
     &__div_titre {
+        @include position_menu;
         @include flex_row;
+        background-color: $color_grey;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 12px;
     }
     &__div_menu {
+        @include position_menu;
         @include flex_column;
+        padding: 12px;
         &__div_titre {
             border-bottom: 3px solid $tertiary_color;
+            margin-bottom: 20px;
             width: 50px;
         }
         &__div_plat {
+            cursor: pointer;
             @include flex_row;
             background-color: $color_white;
             border-radius: 15px;
             @include box-shadow;
+            margin-bottom: 20px;
             padding-left: 12px;
             width: 96%;
             height: 100px;
+            @for $plat from 1 through 10 {
+                &--#{$plat} {
+                    animation: plats $anim_plat-dur $anim_plat-delay*$plat both;
+                }
+            }
             div {
                 margin: 0px;
             }
@@ -61,7 +66,7 @@
                 padding-top: 22px;
                 padding-bottom: 22px;
                 i {
-                    transition: transform 1000ms;
+                    transition: transform 600ms;
                     color: $color_white;
                     font-size: 1.5em;
                 }
@@ -78,6 +83,7 @@
         }
     }
     &__div_bouton{
+        @include position_menu;
         text-align: center;
     }
 }
