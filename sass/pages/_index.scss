@@ -1,7 +1,10 @@
 .sct_presentation{
     @include flex_column;
     padding: 12px;
-    height: 300px;
+    padding-top: 30px;
+    div {
+        margin-bottom: 30px;
+    }
     &__div_fonctionnement {
         display: flex;
         align-items: center;
@@ -79,6 +82,32 @@
                 color: $tertiary_color_darker;
                 margin: 0px;
             }
+        }
+    }
+    &__art_restaurant:hover {
+        @include box-shadow_hover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sct_presentation {
+        @include flex_row;
+        flex-flow: wrap;
+        &__div_titre {
+            width: 100%;
+        }
+        &__div_fonctionnement {
+            width: 30%;
+        }
+    }
+    .sct_restaurants {
+        @include flex_row;
+        flex-flow: wrap;
+        &__div_titre {
+            width: 100%;
+        }
+        &__art_restaurant {
+            width: 48%;
         }
     }
 }

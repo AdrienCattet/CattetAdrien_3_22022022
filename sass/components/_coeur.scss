@@ -9,6 +9,7 @@
 
 .coeur--hover{
     opacity: 0;
+    scale: 1.05;
     background: linear-gradient(to bottom, $primary_color, $secondary_color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
