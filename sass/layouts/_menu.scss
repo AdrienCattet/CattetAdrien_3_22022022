@@ -96,6 +96,7 @@
     .sct_menu {
         @include flex_row;
         justify-content: space-evenly;
+        align-items: baseline;
         flex-flow: wrap;
         &__div_titre {
             justify-content: space-around;

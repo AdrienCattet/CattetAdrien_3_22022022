@@ -360,6 +360,7 @@ footer h3, footer i, footer a {
     justify-content: space-between;
     align-items: center;
     justify-content: space-evenly;
+    align-items: baseline;
     flex-flow: wrap;
   }
   .sct_menu__div_titre {
