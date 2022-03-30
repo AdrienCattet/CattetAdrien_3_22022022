@@ -5,22 +5,23 @@
     .coeur {
         position: absolute;
     }
-}
-
-.coeur--hover{
-    opacity: 0;
-    scale: 1.05;
-    background: linear-gradient(to bottom, $primary_color, $secondary_color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.div_coeur:hover {
-    .coeur {
+    .coeur--hover{
         opacity: 0;
+        transform: scale(1.06);
+        background: linear-gradient(to bottom, $primary_color, $secondary_color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .coeur--hover {
-        opacity: 1;
-        transition: opacity 600ms ease-out;
+    .fa-heart {
+        font-size: 1.5em;
     }
-}  
+    &:hover {
+        .coeur {
+            opacity: 0;
+        }
+        .coeur--hover {
+            opacity: 1;
+            transition: opacity 600ms ease-out;
+        }
+    }
+}
